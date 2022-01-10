@@ -1,0 +1,100 @@
+.header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+   /*  padding-top: 24px;
+    padding-bottom: 25px; */
+    border-bottom: 1px solid #ececec;
+}
+
+.header-list {
+    display: none;
+    /* display: flex; */
+}
+
+.header-list__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header__navigation {
+    display: flex;
+    align-items: center;
+}
+
+.header__link {
+    position: relative;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    outline: none;
+    color: var(--header-text-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            color: var(--accent-text-color);
+        }
+}
+
+.header__link--current::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    bottom: -33px;
+    background-color: #2196f3;
+    border-radius: 2px;
+} 
+
+.header__connect {
+    display: none;
+    margin-left: auto;
+   /*  display: flex; */
+}
+
+.header__connect--mail {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--connection-color);
+    display: flex;
+    outline: none;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+        color: var(--accent-text-color);
+        }
+}
+
+.mail {
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+.header__connect--tel {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--connection-color);
+    margin-left: 59px;
+    display: flex;
+    outline: none;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+        color: var(--accent-text-color);
+        }
+}
+
+.tel {
+    fill: currentColor;
+    margin-right: 10px;
+}
