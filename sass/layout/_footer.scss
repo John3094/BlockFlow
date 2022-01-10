@@ -5,8 +5,11 @@
 }
 
 .footer__container {
-    /* display: flex; */
     align-items: baseline;
+    
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
 }
 
 .footer__contact {
@@ -14,17 +17,21 @@
 } 
 
 .footer-social {
-   /*  display: block;
-    margin-left: 70px; */
     margin-top: 60px;
     text-align: center; 
-    margin-bottom: 60px;    
+    margin-bottom: 60px; 
+    @media screen and (min-width: 1200px) {
+        display: block;
+        margin-left: 70px; 
+        text-align: left;
+        margin-top: 0;
+        margin-bottom: 0;
+    }   
 }
 
 .footer__logo {
     font-family: Raleway, sans-serif;
     font-weight: 700;
-    /* font-size: 26px; */
     font-size: 24px;
     line-height: 1.16;
     letter-spacing: 0.03em;
@@ -32,11 +39,19 @@
     margin-bottom: 20px;
     display: block;
     outline: none;
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+        line-height: 1.19;
+    }
 }
 
 .footer__list {
     display: block;
     text-align: center;
+    
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 
 .footer-address__item:not(:last-child) {
@@ -99,22 +114,22 @@
 
 .footer-form {
     text-align: center;
-        /* display: flex; 
-        flex-wrap: wrap; */
-    /* margin-left: 93px; */
+    @media screen and (min-width: 1200px) {
+        display: block; 
+        margin-left: 93px;
+        text-align: left;
+    }
 }
 
 .footer-form__feedback {
-    /* display: flex; */
-    /* justify-content: center;
-    align-content: center; */
-    /* margin: auto; */
+    @media screen and (min-width: 1200px) {
+        display: flex; 
+        }
 }
 
 .footer-form__input {
     display: flex;
-    border-radius: 4px;
-   /*  width: 358px; */
+    border-radius: 4px;     
     width: 100%;
     height: 50px;
     padding-left: 16px;
@@ -126,6 +141,11 @@
     background-color: #2F303A;
     color: var(--connection-color);
     margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+        margin-bottom: 0 ;
+    }
 }
 
 .footer__btn {
@@ -147,8 +167,11 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-   /*  margin-left: 12px; */
     letter-spacing: 0.06em;
     color: var(--main-button-color);
-    outline: none;      
+    outline: none;    
+    
+    @media screen and (min-width: 1200px) {
+        margin-left: 12px;
+    }
 }
