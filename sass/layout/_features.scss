@@ -8,16 +8,13 @@
     }
 }
 
-/* .features__container {
-    display: flex;
-} */
-
 .features__list {
     @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     flex-basis: calc(100% / 2 - 30px);    
-    margin-left: -30;    
+    margin-left: -30px; 
+    margin-bottom: -30px;   
     }
 }
 
