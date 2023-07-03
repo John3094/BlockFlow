@@ -1,1 +1,1 @@
-# goit-markup-hw-08
+# Pet project markup, only desctop version, Yevhenii Yakovenko Frontend Developer
